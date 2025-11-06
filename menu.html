@@ -1,0 +1,101 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Sunny Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">Sunny Cafe</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-primary">About</a>
+                    <a href="/menu.html" class="text-primary">Menu</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Menu</h2>
+            
+            <!-- Drinks -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-primary text-center">Drinks</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Espresso</h4>
+                        <p class="text-primary font-bold">$3.50</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Latte</h4>
+                        <p class="text-primary font-bold">$4.25</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Cappuccino</h4>
+                        <p class="text-primary font-bold">$4.00</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Iced Tea</h4>
+                        <p class="text-primary font-bold">$3.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-primary text-center">Food</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Croissant</h4>
+                        <p class="text-primary font-bold">$2.99</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Muffin</h4>
+                        <p class="text-primary font-bold">$3.25</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Sandwich</h4>
+                        <p class="text-primary font-bold">$7.50</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold">Salad</h4>
+                        <p class="text-primary font-bold">$8.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Sunny Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
