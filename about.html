@@ -1,0 +1,63 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sunny Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">Sunny Cafe</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="/about.html" class="text-primary">About</a>
+                    <a href="/menu.html" class="text-gray-700 hover:text-primary">Menu</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About Sunny Cafe</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Sunny Cafe is a cozy neighborhood spot where friends and families gather to enjoy high-quality coffee and fresh pastries. 
+                Established in 2015, we pride ourselves on sourcing the finest beans from local roasters and baking our goods daily.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Our blue-themed interior creates a calming atmosphere, perfect for a quick espresso or a leisurely brunch. 
+                Join us and experience the warmth of Sunny Cafe!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Sunny Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
